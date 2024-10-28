@@ -2,11 +2,11 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 
 export default function SocialBar() {
   return (
-    <div className="flex flex-row gap-3 rounded-full bg-white px-3 py-2 shadow-md ">
+    <div className="flex flex-row gap-3 rounded-full bg-white px-3 py-2 shadow-md [&>i]:size-6 [&>i]:text-slate-600">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <i className="i-ri-github-fill size-6 text-slate-600" />
+            <i className="i-ri-github-fill" />
           </TooltipTrigger>
           <TooltipContent>
             <p>Github</p>
@@ -16,7 +16,7 @@ export default function SocialBar() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <i className="i-ri-twitter-x-fill size-6 text-slate-600" />
+            <i className="i-ri-twitter-x-fill" />
           </TooltipTrigger>
           <TooltipContent>
             <p>Twitter</p>
@@ -26,7 +26,7 @@ export default function SocialBar() {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <i className="i-ri-steam-fill size-6 text-slate-600" />
+            <i className="i-ri-steam-fill" />
           </TooltipTrigger>
           <TooltipContent>
             <p>Steam</p>
